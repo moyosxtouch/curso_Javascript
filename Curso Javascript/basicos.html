@@ -10,57 +10,78 @@
 <body>
   <h1>Fundamentos Javascript</h1>
   <script>
-    var hola = "Hola Mundo";
-    let hello = "Hello World"
-    console.log(hola);
-    console.log(hello);
-    console.log(window);
-    console.log(window.hola);
-    console.log(window.hello);
-    //  Ambito de bloque
 
-    // Esto es un bloque-comentario de una linea
-    /* Esto
-     es 
-     un 
-     comentario
-     de 
-     varias
-     lineas*/
-    /*console.log("**********************var**************************");
-    var musica = "Rock";
-    console.log("Variable Musica antes del Bloque", musica);
-    {
-      var musica = "Pop";
-      console.log("Variable Musica dentro del Bloque", musica);
-    }
-    console.log("Variable Musica despues del bloque", musica);
-    console.log("**********************let**************************");
-    let musica2 = "Rock";
-    console.log("Variable Musica antes del Bloque", musica2);
-    {
-      let musica2 = "Pop";
-      console.log("Variable Musica dentro del Bloque", musica2);
-    }
-    console.log("Variable Musica despues del bloque", musica2); */
-    let a;
-    const PI = 3.1416;
-    console.log(PI)
-    a = "Kenai"
-    console.log(a)
+    // let nombre = "jon"
+    // let apellido = "mircha"
+    // let saludo = new String("Hola Mundo");
+    // let lorem = "lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, et dolorum. Adipisci sequi, voluptades accusamus earum magnam non pariatur odit consequuntur dicta modi. Quam soluta aliquid nam ea quod dolore."
+    // console.log(nombre, apellido, saludo);
+    // console.log(
+    //   nombre.length,
+    //   apellido.length,
+    //   saludo.length,
+    //   nombre.toUpperCase(),
+    //   apellido.toLowerCase(),
+    //   lorem.includes("amet"),
+    //   lorem.includes("jon"),
+    //   lorem,
+    //   lorem.trim(),
+    //   lorem.split(","),
 
-    let objeto = {
-      nombre: "jon",
-      edad: 35
-    }
-    let colores = ["blanco", "negro", "azul"];
-    console.log(objeto)
-    console.log(colores)
-    objeto.correo = "jonmircha@gmail.com"
-    colores.push("verde")
 
-    console.log(objeto)
-    console.log(colores)
+
+    // );
+
+    let nombre = "Jon";
+    let apellido = "Mircha";
+    //Concatenacion
+    let saludo = "Hola mi nombre es" + " " + nombre + " " + apellido;
+    console.log(saludo);
+    //Interpolacion de variables
+    //Template String
+    let saludo2 = `Hola mi nombre es ${nombre} ${apellido}.`;
+    console.log(saludo2);
+    let ul = `
+    <ul>
+    <i>primavera</li>
+    <i>verano</li>
+    <i>otoño</li>
+    <i>invierno</i>
+    </ul>`
+    console.log(ul)
+    let a = 2
+    let b = new Number(1)
+    let c = 7.19
+    let d = "5.6sss"
+    console.log(a, b)
+    console.log(c.toFixed(1))
+    console.log(c.toFixed(5))
+    console.log(parseInt(c))
+    console.log(parseFloat(c))
+    console.log(typeof c, typeof d)
+    console.log(a + b)
+    console.log(c + d)
+    console.log(c + parseInt(d))
+    console.log(c + parseFloat(d))
+    console.log(c + Number.parseInt(d))
+    console.log(c + Number.parseFloat(d))
+
+    let verdadero = true
+    let falso = false
+    let v = Boolean(true)
+    let f = Boolean(false)
+    console.log(verdadero, falso, v, f)
+    console.log(typeof verdadero, typeof falso)
+    /*undefined indica que no se ha
+    inicializado una variable y que el valor esta ausente*/
+    let indefinida;
+    console.log(indefinida)
+    let nulo = null
+    console.log(null)
+
+    // NaN Not a Number
+    let noEsUnNumero = "hola" * 3.7
+    console.log(noEsUnNumero)
 
   </script>
 </body>

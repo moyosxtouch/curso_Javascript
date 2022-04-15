@@ -32,56 +32,173 @@
 
     // );
 
-    let nombre = "Jon";
-    let apellido = "Mircha";
-    //Concatenacion
-    let saludo = "Hola mi nombre es" + " " + nombre + " " + apellido;
-    console.log(saludo);
-    //Interpolacion de variables
-    //Template String
-    let saludo2 = `Hola mi nombre es ${nombre} ${apellido}.`;
-    console.log(saludo2);
-    let ul = `
-    <ul>
-    <i>primavera</li>
-    <i>verano</li>
-    <i>otoño</li>
-    <i>invierno</i>
-    </ul>`
-    console.log(ul)
-    let a = 2
-    let b = new Number(1)
-    let c = 7.19
-    let d = "5.6sss"
-    console.log(a, b)
-    console.log(c.toFixed(1))
-    console.log(c.toFixed(5))
-    console.log(parseInt(c))
-    console.log(parseFloat(c))
-    console.log(typeof c, typeof d)
-    console.log(a + b)
-    console.log(c + d)
-    console.log(c + parseInt(d))
-    console.log(c + parseFloat(d))
-    console.log(c + Number.parseInt(d))
-    console.log(c + Number.parseFloat(d))
+    // let nombre = "Jon";
+    // let apellido = "Mircha";
+    // //Concatenacion
+    // let saludo = "Hola mi nombre es" + " " + nombre + " " + apellido;
+    // console.log(saludo);
+    // //Interpolacion de variables
+    // //Template String
+    // let saludo2 = `Hola mi nombre es ${nombre} ${apellido}.`;
+    // console.log(saludo2);
+    // let ul = `
+    // <ul>
+    // <i>primavera</li>
+    // <i>verano</li>
+    // <i>otoño</li>
+    // <i>invierno</i>
+    // </ul>`
+    // console.log(ul)
+    // let a = 2
+    // let b = new Number(1)
+    // let c = 7.19
+    // let d = "5.6sss"
+    // console.log(a, b)
+    // console.log(c.toFixed(1))
+    // console.log(c.toFixed(5))
+    // console.log(parseInt(c))
+    // console.log(parseFloat(c))
+    // console.log(typeof c, typeof d)
+    // console.log(a + b)
+    // console.log(c + d)
+    // console.log(c + parseInt(d))
+    // console.log(c + parseFloat(d))
+    // console.log(c + Number.parseInt(d))
+    // console.log(c + Number.parseFloat(d))
 
-    let verdadero = true
-    let falso = false
-    let v = Boolean(true)
-    let f = Boolean(false)
-    console.log(verdadero, falso, v, f)
-    console.log(typeof verdadero, typeof falso)
-    /*undefined indica que no se ha
-    inicializado una variable y que el valor esta ausente*/
-    let indefinida;
-    console.log(indefinida)
-    let nulo = null
-    console.log(null)
+    // let verdadero = true
+    // let falso = false
+    // let v = Boolean(true)
+    // let f = Boolean(false)
+    // console.log(verdadero, falso, v, f)
+    // console.log(typeof verdadero, typeof falso)
+    // /*undefined indica que no se ha
+    // inicializado una variable y que el valor esta ausente*/
+    // let indefinida;
+    // console.log(indefinida)
+    // let nulo = null
+    // console.log(null)
 
-    // NaN Not a Number
-    let noEsUnNumero = "hola" * 3.7
-    console.log(noEsUnNumero)
+    // // NaN Not a Number
+    // let noEsUnNumero = "hola" * 3.7
+    // console.log(noEsUnNumero)
+
+    //Arrays
+    // const a = [];
+    // console.log(a);
+    // const b = [1, true, "hola", ["A", "B", "C", [1, 2, 3]]];
+    // console.log(b);
+    // console.log(b.length);
+    // console.log(b[2]);
+    // console.log(b[0]);
+    // console.log(b[3]);
+    // console.log(b[3][2]);
+    // console.log(b[3][3][0]);
+    // const c = Array.of("x", "y", "z", 9, 8, 7);
+    // console.log(c);
+    // const d = Array(100).fill(false);
+    // console.log(d);
+
+    // const colores = ["Rojo", "Verde", "Azul"];
+    // console.log(colores);
+    // colores.push("Negro");
+    // console.log(colores);
+    // colores.pop();
+    // console.log(colores);
+    // colores.forEach(function (el, index) {
+    //   console.log(`<li id="${index}">${el}</li>`);
+    // });
+
+    //Objects
+    // const moyo = {
+    //   nombre: "Moyo",
+    //   apellido: "moyosky",
+    //   edad: 34,
+    //   pasatiempos: ["dormir", "hacer ejecicio", "jugar videojuegos"],
+    //   soltero: true,
+    //   contacto: {
+    //     email: "moyosxtouch@gmail.com",
+    //     twitter: "@moyosxtouch",
+    //     phone: "2282126889"
+    //   },
+    //   saludar: function () {
+    //     console.log(`hola`)
+    //   },
+    //   decirmiNombre: function () {
+    //     console.log(`Hola me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.twitter} en twitter`)
+
+    //   }
+    // }
+    // console.log(moyo);
+    // console.log(moyo["nombre"]);
+    // console.log(moyo["apellido"]);
+    // console.log(moyo.nombre);
+    // console.log(moyo.apellido);
+    // console.log(moyo.edad);
+    // console.log(moyo.soltero);
+    // console.log(moyo.pasatiempos);
+    // console.log(moyo.pasatiempos[1]);
+    // console.log(moyo.contacto);
+    // console.log(moyo.contacto.email);
+    // moyo.saludar();
+    // moyo.decirmiNombre();
+    // console.log(Object.keys(moyo));
+    // console.log(Object.values(moyo));
+    // console.log(moyo.hasOwnProperty("nombre"))
+    // console.log(moyo.hasOwnProperty("casa"));
+
+    //operadores
+    //aritmeticos
+    // let a = 5 + (5 - 10) * 3;
+    // let modulo = 5 % 2;
+    // console.log(a);
+    // console.log(modulo);
+    // //relacionales: >, < >=, <=, ==, ===, !=, !==
+
+    // console.log(8 > 9);
+    // console.log(9 > 8);
+    // console.log(8 >= 9);
+    // console.log(9 >= 8);
+    // console.log(7 < 7);
+    // console.log(7 <= 7);
+    /*
+    =1 igual es asignacion de variable
+    == 2 iguales es comparacion de valores
+    === 3 iguales es comparacion de tipo de dato y de valor */
+    // console.log(7 == 7);
+    // console.log("7" == 7);
+    // console.log(0 == false);
+
+    // console.log(7 === 7);
+    // console.log("7" === 7);
+    // console.log(0 === false)
+
+
+    //Incremento Decremento
+    // let i = 2;
+    // console.log(i++);
+    // //console.log(++i);
+    // // i = i +2;
+    // // i*= 3;
+    // //operador unario
+    // i++;
+    // i--;
+    // ++i;
+    // --i;
+    // console.log(i);
+
+    /*logicos:
+    ! -Not: Niega, es decir lo que es verdadero lo vuelve falso y viceversa
+    || - Or: Cuando tengo 2 o mas condiciones, con que una se cumpla, es decir sea verdadera, el OR sera verdadero
+    && - And: Cuando tengo 2 o mas condiciones, todas tienen que cumplirse, es decir ser verdaderas, para que AND se valide */
+
+    console.log(!true);
+    console.log(!false);
+    console.log((9 === 9) || ("9" === 9));
+    console.log((9 === 9) && ("9" === 9));
+    console.log((9 === 9) && ("9" === "9"));
+
+
 
   </script>
 </body>

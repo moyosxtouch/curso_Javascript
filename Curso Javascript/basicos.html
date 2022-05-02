@@ -122,21 +122,167 @@
     //     console.log(ul)
 
     /* **********     Curso JavaScript: 7. Números (Numbers) - #jonmircha     ********** */
-    let a = 2
-    let b = new Number(1)
-    let c = 7.19
-    let d = "5.6"
-    console.log(a, b)
-    console.log(c.toFixed(1))
-    console.log(c.toFixed(5))
-    console.log(parseInt(c))
-    console.log(parseFloat(c))
-    console.log(typeof c, typeof d)
-    console.log(a + b)
-    console.log(c + parseInt(d))
-    console.log(c + parseFloat(d))
-    console.log(c + Number.parseInt(d))
-    console.log(c + Number.parseFloat(d))
+    // let a = 2
+    // let b = new Number(1)
+    // let c = 7.19
+    // let d = "5.6"
+    // console.log(a, b)
+    // console.log(c.toFixed(1))
+    // console.log(c.toFixed(5))
+    // console.log(parseInt(c))
+    // console.log(parseFloat(c))
+    // console.log(typeof c, typeof d)
+    // console.log(a + b)
+    // console.log(c + parseInt(d))
+    // console.log(c + parseFloat(d))
+    // console.log(c + Number.parseInt(d))
+    // console.log(c + Number.parseFloat(d))
+
+    /* **********     Curso JavaScript: 8. Booleans - #jonmircha     ********** */
+    // let falso = false
+    // let verdadero = true
+    // let v = Boolean(true)
+    // let f = Boolean(false)
+    // console.log(verdadero, falso, v, f)
+
+    /* **********     Curso JavaScript: 9. undefined, null & NaN - #jonmircha     ********** */
+    //undefined indica que no se ha inicializado una variable y que el valor esta ausente
+    // let indefinida
+    // console.log(indefinida)
+    // //null es un valor especial que indica la ausencia de un valor
+    // let nulo = null
+    // console.log(null)
+    // //NaN - Not a Number
+    // let noEsunNumero = "hola" * 3.7
+    // console.log(noEsUnNumero)
+    /* **********     Curso JavaScript: 10. Funciones - #jonmircha     ********** */
+    /*
+        Una función es un bloque de código, autocontenido, que se puede definir una vez y ejecutar en cualquier momento. Opcionalmente, una función puede aceptar parámetros y devolver un valor.
+        Las funciones en JavaScript son objetos, un tipo especial de objetos:
+        Se dice que las funciones son ciudadanos de primera clase porque pueden asignarse a un valor, y pueden pasarse como argumentos y usarse como un valor de retorno.
+        */
+    // Declaracion de funcion
+    /* function estoEsUnaFuncion (){
+      console.log("uno")
+      console.log("dos")
+      console.log("tres")
+    }
+    //Invocacion de funcion
+    /*estoEsUnaFuncion()
+    estoEsUnaFuncion()
+    estoEsUnaFuncion()
+    estoEsUnaFuncion() */
+
+    /*function unaFuncionQueDevuelvaUnValor(){
+      console.log("uno")
+      return 19
+      console.log("dos")
+      console.log("tres")
+      return "La funcion ha retornado una cadena de texto"
+    }
+    
+    //let valorDeFuncion =unaFuncionQueDevuelveUnValor()
+    console.log(valorDeFuncion)
+    
+    /*  function saludar(nombre = "Desconocido", edad = 0) {
+           console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
+         } */
+
+    //saludar("kEnAi", 7);
+    //saludar();
+
+    //Funciones declaradas VS funciones expresadas
+
+    //funcionDeclarada();
+
+    /* function funcionDeclarada() {
+      console.log("Esto es un función declarada, puede invocarse en cualquier parte de nuestro código, incluso antes de que la función sea declarada");
+    } */
+
+    //funcionDeclarada();
+
+    //funcionExpresada();
+
+    //función anónima
+    /* const funcionExpresada = function () {
+      console.log("Esto es una función expresada, es decir, una función que se le ha asignado como valor a una variable, si invocamos esta función antes de su definición JS nos dirá 'Cannot access 'funcionExpresada' before initialization'")
+    } */
+
+    //funcionExpresada();
+
+
+    /* **********     Curso JavaScript: 11. Arreglos (Arrays) - #jonmircha     ********** */
+    // const a = []
+    // const b = [1, true, "hola", ["a", "b", "c", [1, 2, 3]]]
+    // console.log(a)
+    // console.log(b)
+    // console.log(b, length)
+    // console.log(b[2])
+    // console.log([0])
+    // console.log(b[3])
+    // console.log(b[3][2])
+    // console.log(b[3][3][0])
+
+    // const c = Array.of("x", "y", "z", 9, 8, 7)
+    // console.log(c)
+
+    // const d = Array(100).fill("que onda vatos locos")
+    // console.log(d)
+
+    // const colores = ["Rojo", "Verde", "Azul"]
+    // console.log(colores)
+    // colores.push("Negro")
+    // console.log(colores)
+    // colores.pop()
+    // console.log(colores)
+    // colores.forEach(function (el, index) {
+    //   console.log(`<li id="${index}">${el}</li>`)
+    // }) */
+
+    /* **********     Curso JavaScript: 12. Objetos - #jonmircha     ********** */
+
+    // const b = {}
+    // console.log(b)
+
+    // const c = new Object()
+    // console.log(c)
+
+    // const moy = {
+    //   nombre: "Moyo",
+    //   apellido: "Moyosky",
+    //   edad: 35,
+    //   pasatiempos: ["correr", "hacer ejercicio", "estudiar"],
+    //   soltero: true,
+    //   contacto: {
+    //     email: "moyosxtouch@gmail.com",
+    //     twitter: "@supermoyobros",
+    //     movil: "521552282126889"
+    //   },
+    //   saludar: function () {
+    //     console.log(`hola`)
+
+    //   },
+    //   decirMiNombre: function () {
+    //     console.log(`hola me llamo ${this.nombre}  ${this.apellido} y tengo ${this.edad} años y me puedes seguir como ${this.contacto.twitter}`)
+
+    //   }
+
+    // }
+    // console.log(moy)
+    // console.log(moy.nombre)
+    // console.log(moy.apellido)
+    // console.log(moy.edad)
+    // console.log(moy.soltero)
+    // console.log(moy.pasatiempos)
+    // console.log(moy.pasatiempos[1])
+    // console.log(moy.contacto)
+    // console.log(moy.contacto.twitter)
+    // moy.saludar()
+    // moy.decirMiNombre()
+    // console.log(Object.keys(moy))
+    // console.log(Object.values(moy))
+    // console.log(moy.hasOwnProperty("nombre"))
+    // console.log(moy.hasOwnProperty("nacimiento"))
 
 
   </script>

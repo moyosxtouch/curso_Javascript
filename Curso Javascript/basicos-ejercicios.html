@@ -298,10 +298,43 @@ factorial=5*4
     calcularAnios(new Date(2087, 1, 16))
     console.clear()
 
-//     18) Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe.miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5.
+    //     18) Programa una función que dada una cadena de texto cuente el número de vocales y consonantes, pe.miFuncion("Hola Mundo") devuelva Vocales: 4, Consonantes: 5.
+    const contarLetras = (cadena = "") => {
+      if (!cadena) return console.warn("No ingresaste una cadena de texto")
+      if (typeof cadena !== "string") return console.error(`El valor ${cadena} ingresado, No es una cadena de texto`)
+      let vocales = 0,
+        consonantes = 0
+      cadena = cadena.toLocaleLowerCase()
+      for (let letra of cadena) {
+        if (/[aeiouáéíóúü]/.test(letra)) vocales++
 
-//       19) Programa una función que valide que un texto sea un nombre válido, pe.miFuncion("Jonathan MirCha") devolverá verdadero.
+        if (/[bcdfghjklmnñpqrstvwxyz]/.test(letra)) consonantes++
 
+      }
+      return console.info({
+        cadena,
+        vocales,
+        consonantes
+      })
+    }
+    contarLetras()
+    contarLetras(8)
+    contarLetras("QUE ONDA")
+    //       19) Programa una función que valide que un texto sea un nombre válido, pe.miFuncion("Jonathan MirCha") devolverá verdadero.
+    const validarNombre = (nombre = "") => {
+      if (!nombre) return console.warn("No ingresaste un nombre")
+      if (typeof nombre !== "string") return console.error(`El valor ${nombre} ingresado, No es una cadena de texto`)
+      let expReg = /^[A-Za-zÑñáéíóúüÁÉÍÓÚÜ\s]+$/g.test(nombre)
+      return (expReg)
+        ? console.info(`"${nombre}", Es un nombre valido`)
+        : console.warn(`"${nombre}", NO es un nombre valido`)
+    }
+
+    validarNombre()
+    validarNombre(5)
+    validarNombre("Victor Moises")
+    validarNombre("Victor Moises, Moyo")
+    console.clear()
 // 20) Programa una función que valide que un texto sea un email válido, pe.miFuncion("jonmircha@gmail.com") devolverá verdadero.
   </script>
 </body>

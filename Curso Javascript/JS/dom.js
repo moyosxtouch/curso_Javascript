@@ -304,41 +304,44 @@ console.log($cards.children[3].closest("section")); */
 Los eventos son los mecanismos que tenemos en JavaScript para controlar las acciones del usuario y definir el comportamiento del documento en cierto momento o cuando se cumplan ciertas condiciones.
 Las funciones que se ejecutan en un evento se llaman Event Handler (Manejador de Eventos). */
 
-function holaMundo() {
-  alert("Hola niño Polla ==)");
-  console.log(Event);
-}
-function saludar(nombre = "Desconocid@") {
-  alert(`Hola ${nombre}`);
-  console.log(Event);
-}
+// function holaMundo() {
+//   alert("Hola niño Polla ==)");
+//   console.log(Event);
+// }
+// function saludar(nombre = "Desconocid@") {
+//   alert(`Hola ${nombre}`);
+//   console.log(Event);
+// }
 
-const $eventoSemantico = document.getElementById("evento-semantico"),
-  $eventoMultiple = document.getElementById("evento-multiple"),
-  $eventoRemover = document.getElementById("evento-remover");
-$eventoSemantico.onclick = holaMundo;
-$eventoSemantico.onclick = function (e) {
-  alert("Hola niño polla ==) Manejador de eventos semantico");
-  console.log(e);
-};
-$eventoMultiple.addEventListener("click", holaMundo);
-$eventoMultiple.addEventListener("click", (e) => {
-  alert("Hola Mundo niño polla ==) manejador de eventos multiple");
-  console.log(e);
-  console.log(e.type);
-  console.log(e.target);
-  console.log(Event);
-});
-$eventoMultiple.addEventListener("click", () => {
-  saludar();
-  saludar("Victor");
-});
+// const $eventoSemantico = document.getElementById("evento-semantico"),
+//   $eventoMultiple = document.getElementById("evento-multiple"),
+//   $eventoRemover = document.getElementById("evento-remover");
+// $eventoSemantico.onclick = holaMundo;
+// $eventoSemantico.onclick = function (e) {
+//   alert("Hola niño polla ==) Manejador de eventos semantico");
+//   console.log(e);
+// };
+// $eventoMultiple.addEventListener("click", holaMundo);
+// $eventoMultiple.addEventListener("click", (e) => {
+//   alert("Hola Mundo niño polla ==) manejador de eventos multiple");
+//   console.log(e);
+//   console.log(e.type);
+//   console.log(e.target);
+//   console.log(Event);
+// });
+// $eventoMultiple.addEventListener("click", () => {
+//   saludar();
+//   saludar("Victor");
+// });
 
-const removerDobleClick = (e) => {
-  alert(`Removiendo el evento de tipo ${e.type}`);
-  console.log(e);
-  $eventoRemover.removeEventListener("dblclick", removerDobleClick);
-  $eventoRemover.disabled = true;
-};
+// const removerDobleClick = (e) => {
+//   alert(`Removiendo el evento de tipo ${e.type}`);
+//   console.log(e);
+//   $eventoRemover.removeEventListener("dblclick", removerDobleClick);
+//   $eventoRemover.disabled = true;
+// };
 
-$eventoRemover.addEventListener("dblclick", removerDobleClick);
+// $eventoRemover.addEventListener("dblclick", removerDobleClick);
+
+const $divsEventos = document.querySelectorAll(".eventos-flujo div");
+console.log($divsEventos);
